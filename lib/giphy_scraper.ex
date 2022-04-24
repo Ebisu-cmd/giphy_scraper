@@ -8,7 +8,7 @@ defmodule GiphyScraper do
   end
 
   defp construct_GIPHY_search_url_endpoint(query) do
-    "api.giphy.com/v1/gifs/search?api_key=1CQoxaod6AB5n4ttMEFd9HhqlGkjzvdt&limit=25&q=" <> query
+    "api.giphy.com/v1/gifs/search?api_key=1CQoxaod6AB5n4ttMEFd9HhqlGkjzvdt&limit=1&q=" <> query
   end
 
   defp issue_get_request(url) do
@@ -16,7 +16,7 @@ defmodule GiphyScraper do
   end
 
   defp process_get_response(response) do
-    response
+    response.body
   end
 
 end
