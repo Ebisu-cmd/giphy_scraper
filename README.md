@@ -1,6 +1,6 @@
 # GiphyScraper
 
-**TODO: Add description**
+This application is a simple project that involves querying the search endpoint of the GIPHY API. It uses the httpoison module to make GET requests to the API and uses the jason module to decode the reponse body. The application should return a list of 25 GiphyImage structs that contain information about each queried item. 
 
 ## Installation
 
