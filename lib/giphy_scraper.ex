@@ -12,14 +12,11 @@ defmodule GiphyScraper do
   end
 
   defp issue_get_request(url) do
-    case HTTPoison.get(url) do
-      {:ok, response} -> response.body
-      #add processing for get request errors {:error, error}
-    end
+    HTTPoison.get!(url)
   end
 
-  defp process_get_response(body) do
-
+  defp process_get_response(response) do
+    response
   end
 
 end
